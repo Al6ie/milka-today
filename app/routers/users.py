@@ -6,15 +6,17 @@ from core.models import Person
 
 router = APIRouter()
 
+#Страница с регистрацией
 @router.get("/reg")
 def reg_user_get():
-    return FileResponse("templates/html/registration/registration.html")
+    return FileResponse("templates/registration.html")
 
+#Получение регистрационных данных
 @router.post("/reg")
 def reg_user_post(person: Person):
-        # logger.info(f'POST - {person}')
         return {"message": f"Привет, {person.name}"}
 
+#Переход к пользователю
 @router.get("users/{id}")
 def get_user(response: Response, id: int):
     if id < 1:

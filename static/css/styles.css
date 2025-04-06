@@ -1,0 +1,52 @@
+/* Основной стиль */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Заголовок */
+header {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Основное содержимое */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Кнопка входа */
+.login-button {
+    display: inline-block;
+    background-color: #ffb6c1;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Описание приложения */
+p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Изображения */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
